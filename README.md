@@ -30,10 +30,25 @@ Set environment variables as like below:
 export CDK_KEYPAIR=\<your key pair name\>
 ```
 
+## Deploy
+
+```
+cdk deploy
+```
+
 ## SSH login to an EC2 instance
 
 SSH login to an EC2 instance as like:
 ```
 ssh -i \<your .pem filename\> ec2-user@\<global ip address of your ec2 instance\>
 ```
+
+## Clean up
+
+1. Destroy CDK stack
+```
+cdk destroy
+```
+
+2. Remove Key Pair
 
