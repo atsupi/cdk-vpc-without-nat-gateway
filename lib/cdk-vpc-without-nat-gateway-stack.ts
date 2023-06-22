@@ -9,12 +9,12 @@ export class CdkVpcWithoutNatGatewayStack extends cdk.Stack {
       ipAddresses: ec2.IpAddresses.cidr('10.0.0.0/21'),
       subnetConfiguration: [
         {
-          cidrMask: 28,
+          cidrMask: 24,
           name: 'public',
           subnetType: ec2.SubnetType.PUBLIC,
         },
         {
-          cidrMask: 28,
+          cidrMask: 24,
           name: 'isolated',
           subnetType: ec2.SubnetType.PRIVATE_ISOLATED,
         },
